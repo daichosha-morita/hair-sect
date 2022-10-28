@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+a:focus, *:focus {
+	outline: none;
+	text-decoration: none;
+}
+.main_h1 {
+	font-size: 12px;
+	padding: 15px;
+}
+.sns_bt {
+	padding: 0 15px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}
+.sns_bt img {
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	margin-right: 10px;
+}
+.main_visual {
+	width: 100%;
+}
+.logo_layout {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.pankuzu {
+	margin-bottom: 100px;
+	padding-top: 10px;
+}
+.pankuzu li {
+	float: left;
+	margin-right: 10px;
+}
+.pankuzu li:before {
+	content: ">";
+	margin-right: 10px;
+}
+.pankuzu li:first-child:before {
+	display: none;
+}
+hr.line {
+	clear: both;
+	border: none;
+	border-top: 1px solid #000;
+}
+footer {
+	background: #fbf9f3;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position:relative;
+}
+
+footer #page-top{
+	position: fixed;
+	right: 50px;
+	bottom: 100px;
+}
+
+footer ul li {
+	float: left;
+	margin: 0 15px;
+}
+footer ul li a {
+	font-family: 'Playfair Display', serif;
+	font-size: 11px;
+}
+footer .copy {
+	font-family: 'Playfair Display', serif;
+	font-size: 11px;
+	clear: both;
+	text-align: center;
+	padding-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (max-width: 767px) {
+.main_h1 {
+	padding: 15px;
+}
+.pankuzu {
+	margin-bottom: 50px;
+}
+.voir {
+	margin-bottom: 40px;
+}
+	footer #page-top{
+	position: fixed;
+	right: 20px;
+	bottom: 50px;
+}
+	
+footer .logo {
+	text-align: center;
+	margin-bottom: 30px;
+}
+footer ul {
+	text-align: center;
+}
+}

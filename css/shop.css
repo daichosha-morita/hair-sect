@@ -1,0 +1,330 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.shop_notice {
+	margin: 0 0 60px 0;
+}
+
+.shop_notice a {
+	display: block;
+	width: 600px;
+	margin: 0 auto;
+	padding: 30px;
+	border: 3px solid #cc0000;
+}
+
+.shop_notice h2 {
+	font-family: serif;
+	color: #cc0000;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 0 0 20px 0;
+}
+
+.shop_notice h2 br {
+	display: none;
+}
+
+.shop_notice h3 {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.4;
+	margin: 0 0 10px 0;
+}
+
+.shop_notice h3 span {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 0 15px 0;
+}
+
+.shop_notice h4 {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 0 15px 0;
+}
+
+.shop_notice p {
+	font-family: serif;
+	color: #cc0000;
+	font-size: 14x;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	margin: 0;
+}
+
+.shop_info h2 {
+	text-align: center;
+	font-size: 42px;
+	letter-spacing: 0.2em;
+	font-family: 'Playfair Display', serif;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #989da3;
+	margin-bottom: 60px;
+}
+.shop_info h3 {
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 0.2em;
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 30px;
+}
+.shop_info .logo {
+	text-align: center;
+	margin-bottom: 70px;
+}
+.shop_info .logo span {
+	display: block;
+	padding-top: 20px;
+}
+.shop_info .concept {
+	text-align: center;
+	margin-bottom: 70px;
+	color: #808080;
+	font-size: 17px;
+	line-height: 2em;
+	letter-spacing: 1px;
+}
+.info {
+	margin-bottom: 70px;
+}
+.info .shop_title{
+	font-size: 16px;
+	color: #333333;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.info table {
+	margin-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.info table th {
+	font-size: 20px;
+	letter-spacing: 0.2em;
+	font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	width: 25%;
+	padding-bottom: 15px;
+	vertical-align: top;
+}
+.info table td {
+	width: 75%;
+	font-size: 16px;
+	padding-bottom: 15px;
+	color: #808080;
+}
+.info .bt {
+	text-align: center;
+}
+.info .bt a {
+	display: block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	
+	font-size: 18px;
+}
+.info .bt.tel a {
+	font-family: 'Playfair Display', serif;
+}
+.info .bt img {
+	margin-right: 15px;
+}
+.shop_ph {
+	margin-bottom: 100px;
+}
+.shop_ph p {
+	padding: 0;
+}
+.cap_link a{
+	display: block;
+	clear: both;
+	font-size: 16px;
+	color: #333333;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#map {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 10px;
+}
+#map iframe {
+	width: 100%;
+}
+.more_map {
+	text-align: right;
+	margin-bottom: 100px;
+}
+.staff {
+	margin-bottom: 100px;
+}
+.staff p {
+	text-align: center;
+}
+.staff .ph {
+	margin-bottom: 10px;
+}
+.staff .rank {
+	margin-bottom: 10px;
+	color: #cdb167;
+	font-size: 12px;
+}
+.staff .name {
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+.staff .ruby {
+	font-size: 12px;
+}
+.staff .col-md-3.col-sm-4.col-xs-6 {
+	margin-bottom: 30px;
+}
+#schedule{
+	margin-top: -100px;
+	padding-top: 100px;
+}
+.calender {
+	margin-bottom: 100px;
+}
+.calender iframe {
+	width: 100%;
+}
+.other_base{
+	margin-bottom: 80px;
+}
+.other_shop {
+	text-align: center;
+	padding: 0 15px;
+	margin-bottom: 20px;
+}
+.other_shop img {
+	max-width: 100%;
+	height: auto;
+}
+.other_shop span {
+	display: block;
+	color: #808080;
+	padding-top: 15px;
+}
+
+
+@media only screen and (max-width:991px) {
+.info .bt.tel a {
+	border-bottom: none;
+}
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (max-width: 767px) {
+
+.shop_notice a {
+	width: auto;
+	margin: 0 20px;
+	padding: 20px;
+}
+.shop_notice h2 {
+	font-size: 16px;
+	line-height: 1.8;
+}
+.shop_notice h2 br {
+	display: block;
+}
+.shop_notice h3 {
+	font-size: 18px;
+}
+.shop_notice h3 span {
+	font-size: 16px;
+}
+.shop_notice h4 {
+	font-size: 14px;
+}
+
+.shop_info h2 {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.shop_info h3 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+
+.shop_info .logo {
+	margin-bottom: 30px;
+}
+.shop_info .concept {
+	margin-bottom: 50px;
+		text-align: left;
+
+}
+	
+	.shop_info .concept br{
+		display: none;
+	}
+
+.info table th{
+	padding-right:0;
+	font-size:16px;
+}
+
+.info table td{
+	font-size:14px;
+}
+.info table{
+	margin-bottom:20px;
+}
+
+.info table th,.info table td{
+	display:block;
+	width:100%;
+}
+	
+	.cap_link a{
+	font-size: 14px;
+}
+
+
+.shop_ph {
+	margin-bottom: 50px;
+}
+.more_map {
+	margin-bottom: 50px;
+}
+
+#map_canvas {
+	height: 250px;
+}
+
+.staff {
+	margin-bottom: 50px;
+}
+	
+	#schedule{
+	margin-top: -20px;
+	padding-top: 20px;
+}
+	
+.calender {
+	margin-bottom: 50px;
+}
+}
+
+
+@media only screen and (max-width:400px) {
+.calender iframe {
+	width: 320px !important;
+}
+
+
+	
+}

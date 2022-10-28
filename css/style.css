@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* CSS Document */
+.style {
+	padding-bottom:100px;
+}
+.style h2 {
+	text-align: center;
+	font-size: 42px;
+	letter-spacing: 0.2em;
+	font-family: 'Playfair Display', serif;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #989da3;
+	margin-bottom: 60px;
+}
+.style .snav {
+	margin-bottom: 70px;
+}
+.style .snav li {
+	float: left;
+	margin-right: 10px;
+	font-size: 17px;
+}
+.style .snav li a {
+	font-size: 17px;
+}
+.style .snav li:before {
+	content: "/";
+	margin-right: 10px;
+}
+.style .snav li:first-child:before {
+	display: none;
+}
+
+
+/*スタイル一覧*/
+
+.style .cat_tit{
+	font-size:25px;
+	font-weight:bold;
+	margin-bottom:40px;
+	}
+
+.style .style_list {
+	clear: both;
+}
+
+.style .style_list .ph img{
+	width: 100%;
+	height: auto;
+
+}
+.style .style_list div {
+	margin-bottom: 50px;
+}
+.style .style_list div p.tit {
+	font-size: 17px;
+	margin-top: 15px;
+}
+.style .style_list div p.name {
+	margin-top: 15px;
+	color: #808080;
+}
+
+
+/*スタイル詳細*/
+
+.style .style_data {
+	clear: both;
+}
+
+.style .style_data .ph{
+	margin-bottom:30px;
+}
+
+.style .ph img{
+	width:100%;
+	height:auto;
+}
+
+.style .style_data .data .tit{
+	font-size:25px;
+	font-weight:bold;
+	margin-bottom:40px;
+
+}
+
+
+.style .style_data .data .txt{
+	margin-bottom:70px;
+	color:#808080;
+	line-height:1.8em;
+
+}
+
+.style .style_data .data .stylist{
+	color:#808080;
+
+}
+
+@media only screen and (max-width:991px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (max-width: 767px) {
+.style h2 {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+
+.style .snav {
+	margin-bottom: 40px;
+}
+
+}
+
+@media only screen and (max-width:400px) {
+}

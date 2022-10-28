@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.product h2 {
+	text-align: center;
+	font-size: 42px;
+	letter-spacing: 0.2em;
+	font-family: 'Playfair Display', serif;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #989da3;
+	margin-bottom: 60px;
+}
+.product h3 {
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 0.2em;
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 30px;
+}
+.product .concept {
+	text-align: center;
+	margin-bottom: 100px;
+	color: #808080;
+	font-size: 17px;
+}
+.product .concept strong {
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.snav{
+	overflow: hidden;
+}
+.snav p{
+	margin-bottom: 25px;
+}
+
+p.shop_name{
+	padding-top: 100px;
+	margin-top: -80px;
+	margin-bottom: 40px;
+}
+ul.shop_name{
+	width: 510px;
+	padding-top: 100px;
+	margin: -80px auto 40px;
+	overflow: hidden;
+}
+ul.shop_name li{
+	float: left;
+}
+ul.shop_name li:first-child{
+	margin-right: 30px;
+}
+.cap_title{
+	margin-bottom: 40px;
+	text-align: center;
+}
+.product .captxt {
+	text-align: center;
+	color: #808080;
+	font-size: 17px;
+	margin-bottom: 70px;
+}
+.item {
+	margin-bottom: 70px;
+}
+.item h4 {
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 0.2em;
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 40px;
+}
+.item dl dt {
+	margin-bottom: 20px;
+	color: #b89a55;
+	font-size: 20px;
+	font-weight: normal;
+}
+.item dl dt span {
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+}
+.item dl dd {
+	line-height: 2.0em;
+	margin-bottom: 20px;
+}
+.item .bar{
+	max-width: 330px;
+	text-align: center;
+	color: #fff;
+	background: #b89a55;
+	padding: 5px 0;
+	margin-bottom: 10px;
+}
+.item .list{
+	line-height: 1.8em;
+}
+
+@media only screen and (max-width:991px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (max-width: 767px) {
+.product h2 {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.product h3 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.item h4 {
+	text-align: center;
+	font-size: 18px;
+}
+.product .concept {
+	text-align: left;
+	
+}
+	
+	.snav p{
+	margin-bottom: 15px;
+}
+	.snav p img{
+		width: 240px;
+	}
+	
+	p.shop_name{
+	padding-top: 100px;
+	margin-top: 0;
+}
+	
+	ul.shop_name{
+	width: 100%;
+	margin: 0 auto 40px;
+}
+ul.shop_name li{
+	float: none;
+}
+ul.shop_name li:first-child{
+	margin-right: 0;
+	margin-bottom: 15px;
+}
+	
+	.item {
+	margin-bottom: 40px;
+}
+	
+	.item .bar{
+	max-width: 100%;
+	}
+	
+	.cap_title{
+		text-align: left;
+	}
+	
+}
+
+@media only screen and (max-width:400px) {
+}

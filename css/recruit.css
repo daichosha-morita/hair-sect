@@ -1,0 +1,936 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ////////////////////グローバルナビ//////////////////// */
+/* header */
+.inner {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+.inner:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#top-head {
+    top: -100px;
+    position: absolute;
+    width: 100%;
+    margin: 110px auto 0;
+	padding:10px 0;
+    line-height: 1;
+    z-index: 999;
+}
+#top-head a,
+#top-head {
+    color: #000;
+    text-decoration: none;
+}
+#top-head .inner {
+    position: relative;
+}
+#global-nav ul {
+    list-style: none;
+    position: absolute;
+    right: 0;
+	top: 25px;
+	letter-spacing: 1px;
+}
+#global-nav ul li {
+    float: left;
+}
+#global-nav ul li a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #595757;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 17px;
+	padding: 0 10px;
+}
+
+
+/* Fixed */
+#top-head.fixed {
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    background: #fff;
+    background: rgba(255,255,255,1);
+    transition: top 0.65s ease-in;
+    -webkit-transition: top 0.65s ease-in;
+    -moz-transition: top 0.65s ease-in;
+}
+#top-head.fixed .logo {
+    float: left;
+}
+
+/* Toggle Button */
+#nav-toggle {
+    display: none;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    width: 34px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 101;
+}
+#nav-toggle div {
+    position: relative;
+}
+#nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #3f3f01;
+	border-radius: 10px;
+    left: 0;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+#nav-toggle span:nth-child(1) {
+    top: 0;
+}
+#nav-toggle span:nth-child(2) {
+    top: 11px;
+}
+#nav-toggle span:nth-child(3) {
+    top: 22px;
+}
+
+@media only screen and (min-width: 1071px) {
+	#global-nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 7%;
+  width: 85%;
+  height: 2px;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  background-color: #530000;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#global-nav ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+}
+
+@media only screen and (max-width: 1070px) {
+	
+	#top-head,
+    .inner {
+        width: 100%;
+        padding: 0;
+    }
+    #top-head {
+        top: 0;
+        position: fixed;
+        margin-top: 0;
+		background: #fff;
+		z-index: 99999;
+    }
+    /* Fixed reset */
+    #top-head.fixed {
+		background: #fff;
+    }
+    #mobile-head {
+        background: #fff;
+        width: 100%;
+        height: 56px;
+        z-index: 999;
+        position: relative;
+		/*border-bottom: 2px #666666 solid;*/
+    }
+    #top-head.fixed .logo,
+    #top-head .logo {
+		text-align: center;
+		float: none;
+		padding-top: 5px;
+    }
+	
+	#top-head.fixed .logo img,
+    #top-head .logo img {
+		width:120px;
+		padding-top:5px;
+	}
+    
+    #global-nav {
+        position: absolute;
+        /* 開いてないときは画面外に配置 */
+        top: -590px;
+        background: #fff;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+    #global-nav ul {
+        list-style: none;
+        position: static;
+        right: 0;
+        bottom: 0;
+        font-size: 14px;
+    }
+    #global-nav ul li {
+        float: none;
+		color: #000;
+        position: static;
+    }
+    #top-head #global-nav ul li a,
+    #top-head.fixed #global-nav ul li a {
+        width: 100%;
+        display: block;
+        color: #fff;
+        padding: 15px 0;
+		background: #666666;
+		border-bottom: 1px dotted #fff;
+		font-size: 12px;
+		letter-spacing: 4px;
+		font-family: Arial, Helvetica, sans-serif;
+    }
+	.bdnone{
+		border-bottom: none !important;
+	}
+    #nav-toggle {
+        display: block;
+    }
+    /* #nav-toggle 切り替えアニメーション */
+    .open #nav-toggle span:nth-child(1) {
+        top: 11px;
+        -webkit-transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        transform: rotate(315deg);
+    }
+    .open #nav-toggle span:nth-child(2) {
+        width: 0;
+        left: 50%;
+    }
+    .open #nav-toggle span:nth-child(3) {
+        top: 11px;
+        -webkit-transform: rotate(-315deg);
+        -moz-transform: rotate(-315deg);
+        transform: rotate(-315deg);
+    }
+    /* #global-nav スライドアニメーション */
+    .open #global-nav {
+        /* #global-nav top + #mobile-head height */
+        -moz-transform: translateY(645px);
+        -webkit-transform: translateY(645px);
+        transform: translateY(645px);
+    }
+	
+}
+
+
+/* ////////////////////コンテンツ//////////////////// */
+h2{
+	margin-bottom: 30px;
+}
+
+h3{
+	margin-bottom: 60px;
+}
+
+h4{
+	font-size: 36px;
+	color: #333333;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 90px;
+	position: relative;
+}
+
+h4:after{
+	content: "";
+	width:74px;
+	height: 4px;
+	background: #333333;
+	position: absolute;
+	left: 50%;
+	bottom:-40px;
+	margin-left: -37px;
+}
+
+.main_visual{
+	margin: 110px auto 55px;
+}
+
+/* 理念 */
+.rinen_cap{
+	font-size: 18px;
+	color: #595757;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.concept{
+	text-align: center;
+	margin-bottom: 70px;
+}
+.concept dt{
+	margin-bottom: 15px;
+}
+.concept dd{
+	font-size: 14px;
+	color: #9f9fa0;
+	letter-spacing: 1px;
+	line-height: 2.2em;
+}
+
+/* ポイント */
+.point_base{
+	margin-bottom: 100px;
+}
+
+.point_base .point{
+	margin-bottom: 50px;
+}
+
+.point_base .point p{
+	margin-bottom: 30px;
+}
+
+/* イベント */
+.event_box{
+	margin-bottom:40px;
+}
+
+.event_box dl{
+	margin-bottom:50px;
+}
+
+.event_box dl dt{
+	margin-bottom:15px;
+}
+
+.event_box dl dd{
+	font-size:16px;
+	color:#7d7d7d;
+	letter-spacing:1px;
+}
+
+/* スタッフの1日 */
+.oneday_box{
+	margin-bottom:80px;
+}
+
+.oneday_box > div{
+	margin-bottom:30px;
+}
+
+.oneday_box p{
+	margin-bottom:10px;
+}
+
+.oneday_box dl dt{
+	margin-bottom:15px;
+}
+
+.oneday_box dl dd{
+	font-size:16px;
+	color:#7d7d7d;
+	letter-spacing:1px;
+}
+
+/* カリキュラム */
+.curriculum_base{
+	margin-bottom: 50px;
+}
+
+.curriculum_box{
+	margin-bottom: 50px;
+}
+
+.curriculum_box .inner{
+	min-height: 150px;
+	margin-bottom: 20px;
+}
+
+.curriculum_box.step01 .inner{
+	background: url(../img/recruit/bg_step01_a.png) no-repeat left top, url(../img/recruit/bg_step01_b.png) no-repeat right top, url(../img/recruit/bg_step01_c.png) no-repeat left bottom, url(../img/recruit/bg_step01_d.png) no-repeat right bottom;
+	background-size: 38px;
+}
+
+.curriculum_box.step02 .inner{
+	background: url(../img/recruit/bg_step02_a.png) no-repeat left top, url(../img/recruit/bg_step02_b.png) no-repeat right top, url(../img/recruit/bg_step02_c.png) no-repeat left bottom, url(../img/recruit/bg_step02_d.png) no-repeat right bottom;
+	background-size: 38px;
+}
+
+.curriculum_box.step03 .inner{
+	background: url(../img/recruit/bg_step03_a.png) no-repeat left top, url(../img/recruit/bg_step03_b.png) no-repeat right top, url(../img/recruit/bg_step03_c.png) no-repeat left bottom, url(../img/recruit/bg_step03_d.png) no-repeat right bottom;
+	background-size: 38px;
+}
+
+.curriculum_box.step04 .inner{
+	background: url(../img/recruit/bg_step04_a.png) no-repeat left top, url(../img/recruit/bg_step04_b.png) no-repeat right top, url(../img/recruit/bg_step04_c.png) no-repeat left bottom, url(../img/recruit/bg_step04_d.png) no-repeat right bottom;
+	background-size: 38px;
+}
+
+.curriculum_box.step05 .inner{
+	background: url(../img/recruit/bg_step05_a.png) no-repeat left top, url(../img/recruit/bg_step05_b.png) no-repeat right top, url(../img/recruit/bg_step05_c.png) no-repeat left bottom, url(../img/recruit/bg_step05_d.png) no-repeat right bottom;
+	background-size: 38px;
+}
+
+.curriculum_box.step06 .inner{
+	background: url(../img/recruit/bg_step06_a.png) no-repeat left top, url(../img/recruit/bg_step06_b.png) no-repeat right top, url(../img/recruit/bg_step06_c.png) no-repeat left bottom, url(../img/recruit/bg_step06_d.png) no-repeat right bottom;
+	background-size: 38px;
+}
+
+.curriculum_box ul{
+	overflow: hidden;
+	padding-top: 15px;
+	padding-left: 30px;
+}
+
+.curriculum_box ul li{
+	float: left;
+}
+
+.curriculum_box ul li:last-child{
+	font-size: 16px;
+	color: #595757;
+	padding-left: 25px;
+}
+
+.curriculum_box.step01 ul li:last-child{
+	padding-top: 20px;
+}
+
+.curriculum_box.step02 ul li:last-child,
+.curriculum_box.step03 ul li:last-child,
+.curriculum_box.step04 ul li:last-child,
+.curriculum_box.step05 ul li:last-child,
+.curriculum_box.step06 ul li:last-child{
+	padding-top: 30px;
+}
+
+.curriculum_box dl dt{
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.curriculum_box.step02 dl dt{
+	color: #5fc1bf;
+}
+
+.curriculum_box.step03 dl dt{
+	color: #006b95;
+}
+
+.curriculum_box.step04 dl dt{
+	color: #bcb1d7;
+}
+
+.curriculum_box.step05 dl dt{
+	color: #f5b9bf;
+}
+
+.curriculum_box dl dd{
+	font-size: 16px;
+	color: #595757;
+	margin-bottom: 10px;
+}
+
+/* スタッフの本音 */
+.voice_box{
+	margin-bottom:60px;
+}
+
+.voice_box dl{
+	border-bottom:1px dotted #857F7D;
+	padding-bottom:5px;
+	margin-bottom:10px;
+}
+
+.voice_box dl dt{
+	font-size:27px;
+	color:#231815;
+	letter-spacing:1px;
+	margin-bottom:10px;
+}
+
+.voice_box dl dd{
+	font-size:20px;
+	color:#51bbcf;
+}
+
+.voice_box p{
+	font-size:16px;
+	color:#847e7d;
+}
+
+/* 紹介動画 */
+.movie_wrap{
+	max-width: 680px;
+	margin: 0 auto;
+	padding: 60px 0 100px;
+}
+
+
+/* プロとして */
+.bar_pro{
+	background: url(../img/recruit/bg_dot.png) repeat left top;
+	padding: 20px 0;
+}
+
+.bar_pro .pro_inner{
+	padding: 30px 15px;
+	background: #6eaac7;
+}
+
+.pro_box{
+	padding: 50px 0;
+	background: #f3f9f6;
+}
+
+.pro_box p{
+	margin-bottom: 10px;
+}
+
+.pro_box dl{
+	text-align: center;
+}
+
+.pro_box dl dt{
+	font-size: 14px;
+	color: #231815;
+	font-weight: normal;
+}
+
+.pro_box dl dd{
+	font-size: 20px;
+	color: #231815;
+}
+
+.pro_box ul li{
+	font-size: 17px;
+	color: #595757;
+	margin-bottom: 30px;
+}
+
+.pro_box ul li:last-child{
+	margin-bottom: 0;
+}
+
+/* 募集要項 */
+.bar_bosyu{
+	background: #aedbd7;
+	padding: 6px 0;
+}
+
+.bar_bosyu .bosyu_inner{
+	padding: 30px 15px;
+	background: url(../img/recruit/bg_dot.png) repeat left top, #fff;
+}
+
+.bosyu_base{
+	background: #f3f9f6;
+	padding: 80px 0;
+	margin-bottom: 70px;
+}
+
+.bosyu_base ul{
+	max-width:900px;
+	overflow:hidden;
+	margin:0 auto 90px;
+}
+
+.bosyu_base ul li{
+	float:left;
+	width:33.333%;
+	margin-bottom:10px;
+}
+
+.bosyu_base ul li i{
+	color:#231815;
+	padding:0 3px;
+}
+
+.bosyu_base ul li a{
+	display:block;
+	font-size:26px;
+	color:#231815;
+	text-decoration: underline;
+}
+
+/* 会社概要 */
+.company_base{
+	max-width: 970px;
+	margin: 0 auto 130px;
+}
+
+.company_title{
+	font-size: 25px;
+	color: #595757;
+	margin-bottom: 25px;
+	padding-left: 20px;
+	border-left: 8px solid #595757;
+	border-bottom: 1px solid #595757;
+}
+
+.company_list{
+	overflow:hidden;
+	padding:10px 0 10px 20px;
+	border-bottom:1px dotted #9E9E9F;
+}
+
+.company_list dt{
+	float: left;
+    width: 160px;
+	font-size:15px;
+	color:#595757;
+	text-align: left;
+    font-weight: bold;
+	
+}
+
+.company_list.bg_gray{
+	background:#EEEEEF;
+}
+
+.company_list dd{
+	float:left;
+	font-size:15px;
+	color:#595757;
+    letter-spacing: 1px;
+}
+
+.company_list dd a{
+	font-size:15px;
+	color:#595757;
+}
+
+.company_list .bg_gray{
+	background: #eeeeef;
+}
+
+/* 採用の流れ */
+.saiyo_title{
+	font-size:19px;
+	color:#ffffff;
+	background:#5098bb;
+	padding:5px 0 5px 10px;
+	margin-bottom:50px;
+}
+
+.saiyo_flow{
+	text-align:center;
+}
+
+.saiyo_flow li{
+	font-size:21px;
+	color:#530000;
+	position:relative;
+	letter-spacing:1px;
+	margin-bottom:60px;
+}
+
+.saiyo_flow li span{
+	font-size:21px;
+	color:#5098bb;
+}
+
+.saiyo_flow li:first-child::after,
+.saiyo_flow li:nth-child(2)::after,
+.saiyo_flow li:nth-child(3)::after,
+.saiyo_flow li:nth-child(4)::after{
+	content:"";
+	height: 0;
+	width: 0;
+	border-color: #5098bb transparent transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 15px;
+    position: absolute;
+	top:50px;
+	left:50%;
+	margin-left:-15px;
+}
+
+/* 応募フォーム */
+.form_title{
+	font-size: 25px;
+	color: #595757;
+	margin-bottom: 45px;
+	padding-left: 20px;
+	border-left: 8px solid #595757;
+	border-bottom: 1px solid #595757;
+}
+
+.form_red {
+    color: #F33;
+}
+
+.btn_submit{
+	text-align:center;
+	margin:50px auto 150px;
+}
+
+.btn_submit button{
+	border:none;
+	background:none;
+}
+
+.copy{
+	font-size:9px;
+	color:#231815;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+/* 各募集の詳細 */
+.bosyu_youko{
+	padding-top:150px;
+}
+
+.bosyu_youko .bosyu_title{
+	    text-align: center;
+    color: #231815;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+	margin-bottom:20px;
+	border-bottom:1px dashed #231815;
+}
+
+.bosyu_youko ul{
+	text-align:left;
+}
+
+.bosyu_youko ul li{
+	margin-bottom:15px;
+}
+
+.bosyu_youko ul li i{
+	color:#231815;
+	padding:0 3px;
+}
+
+.bosyu_youko ul li a{
+	display:block;
+	font-size:18px;
+	color:#231815;
+}
+
+.bosyu_youko .bg_list {
+    background: #EAE4DB;
+}
+
+.btn_entry{
+	margin:50px 0;
+}
+
+@media only screen and (max-width: 1070px) {
+	.main_visual{
+	margin-top:70px;
+}
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	.pc_display{
+	display:block;
+}
+.sp_display{
+	display:none;
+}
+	
+	h2{
+		padding-top: 100px;
+		margin-top: -100px;
+	}
+	
+	#section_company{
+		padding-top: 100px;
+		margin-top: -100px;
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.pc_display{
+	display:none;
+}
+.sp_display{
+	display:block;
+}
+	
+	h2{
+		padding-top: 80px;
+		margin-top: -80px;
+	}
+	
+	h3{
+	margin-bottom: 30px;
+}
+	
+	h4{
+	font-size: 28px;
+	margin-bottom: 50px;
+}
+
+h4:after{
+	position: absolute;
+	left: 50%;
+	bottom:-20px;
+	margin-left: -37px;
+}
+	
+	/* ボタン */
+.btn_area p:first-child{
+	margin-bottom: 15px;
+}
+
+	/* カリキュラム */
+	.curriculum_box .ic img{
+		width: 160px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+	}
+	
+	.curriculum_box ul{
+	padding-top: 30px;
+		padding-bottom: 30px;
+	padding-left: 0;
+		width: 250px;
+		margin: 0 auto;
+}
+
+.curriculum_box ul li{
+	float: none;
+}
+
+.curriculum_box ul li:last-child{
+	padding-left: 0;
+}
+
+.curriculum_box.step01 ul li:last-child{
+	padding-top: 10px;
+}
+
+.curriculum_box.step02 ul li:last-child,
+.curriculum_box.step03 ul li:last-child,
+.curriculum_box.step04 ul li:last-child,
+.curriculum_box.step05 ul li:last-child,
+.curriculum_box.step06 ul li:last-child{
+	padding-top: 10px;
+}
+	
+	/* スタッフの本音 */
+	.voice_box dl{
+		margin-top: 15px;
+}
+
+.voice_box dl dt{
+	font-size:22px;
+}
+
+.voice_box dl dd{
+	font-size:18px;
+}
+	
+	/* 紹介動画 */
+.movie_wrap{
+	padding: 40px 0 60px;
+}
+	
+	.movie_wrap iframe{
+		height: 300px;
+	}
+	
+	/* プロとして */
+	.pro_box dl{
+		margin-bottom: 15px;
+}
+
+.pro_box ul li{
+	margin-bottom: 20px;
+}
+	
+	/* 募集要項 */
+	.bosyu_base{
+	padding: 60px 0;
+}
+	
+	.bosyu_base ul{
+	margin:0 auto 60px;
+}
+
+.bosyu_base ul li{
+	float:none;
+	width:100%;
+}
+
+.bosyu_base ul li a{
+	font-size:20px;
+}
+	
+	/* 会社概要 */
+	#section_company{
+		padding-top: 80px;
+		margin-top: -80px;
+	}
+	
+	.company_base{
+	margin: 0 auto 60px;
+	}
+	
+.company_list{
+	overflow:hidden;
+	padding:10px 0 10px 20px;
+	margin:0 -15px;
+}
+
+.company_list dt{
+	float: none;
+    width: 100%;
+	margin-bottom:10px;
+}
+
+.company_list dd{
+	float:none;
+}
+
+	/* 採用の流れ */
+.saiyo_flow li{
+	font-size:16px;
+}
+
+.saiyo_flow li span{
+	font-size:16px;
+}
+	
+	.btn_submit{
+	margin:50px auto 70px;
+}
+	
+	/* 各募集の詳細 */
+.bosyu_youko{
+	padding-top:90px;
+}
+
+.bosyu_youko ul{
+	margin-bottom:40px;
+}
+	
+	#form{
+		padding-top: 100px;
+		margin-top: -100px;
+	}
+}
