@@ -1,0 +1,861 @@
+body {
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", "Sawarabi Mincho", serif;
+    animation: pagetransition 2s ease 0s 1 normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+#container {
+    position: relative;
+    min-width: 1000px;
+    height: 100%;
+}
+
+.inner {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.show-for-small {
+    display: none;
+}
+
+.hide-for-small {
+    display: inline;
+}
+
+
+/* headline */
+
+#headline {
+    text-align: center;
+    padding: 14px 0;
+    height: 60px;
+    background: #62403b;
+}
+
+
+/* reception */
+
+#reception {
+    padding: 30px 0 20px 0;
+    height: 120px;
+    background: #f8f8f8;
+}
+
+#reception .detail {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+}
+
+#reception .info {
+    width: 460px;
+}
+
+#reception .info h2 {
+    font-size: 26px;
+    line-height: 1;
+}
+
+#reception .info h2 .small {
+    font-size: 14px;
+}
+
+#reception .info h2 .medium {
+    font-size: 20px;
+}
+
+#reception .info p {
+    font-size: 11px;
+    margin: 0;
+}
+
+#reception .off {
+    width: 160px;
+}
+
+
+/* banner */
+
+#banner {
+    height: 400px;
+    background: #fff;
+}
+
+#banner .inner {
+    height: 100%;
+    background: url(images/shop.png) right bottom no-repeat;
+}
+
+#logo {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    margin: 0;
+}
+
+#open {
+    position: absolute;
+    top: 80px;
+    right: 70px;
+}
+
+
+/* content */
+
+#content {
+    padding-top: 60px;
+    background: url(images/content-bg.png) center top /cover no-repeat;
+}
+
+#concept  {
+    margin-bottom: 60px;
+}
+
+#concept h2 {
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 60px;
+}
+
+#concept h3 {
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 35px;
+}
+
+#concept p {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+#headspa {
+    padding: 60px 100px 80px 100px;
+    background: rgba(29,32,136,.35);
+}
+
+#headspa .title h2 {
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+
+#headspa .title p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#headspa .concept {
+    margin-bottom: 40px;
+}
+
+#headspa .concept .lineup {
+    display: flex;
+    justify-content: space-between;
+}
+
+#headspa .concept .lineup figure {
+    position: relative;
+    margin: 0;
+    width: 230px;
+}
+
+#headspa .concept .lineup figure:after {
+    content: "+";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#headspa .concept .lineup figure:last-child:after {
+    display: none;
+}
+
+#headspa .concept .lineup figure .concept-title {
+    margin-bottom: 10px;
+    background: #0093cc;
+}
+
+#headspa .concept .lineup figure figcaption {
+    color: #fff;
+    font-size: 12px;
+}
+
+
+#headspa .service {
+    margin-bottom: 70px;
+}
+
+#headspa .service .lineup {
+    display: flex;
+    justify-content: space-between;
+}
+
+#headspa .service .lineup figure {
+    position: relative;
+    margin: 0;
+    padding: 20px 15px;
+    width: 260px;
+    background: #cee5f7;
+}
+
+#headspa .service .lineup figure .service-title {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #0e2981;
+}
+
+#headspa .service .lineup figure figcaption {
+    color: #0e2981;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#headspa .trial {
+    margin: 0;
+}
+
+#headspa .trial .feature {
+    margin-bottom: 70px;
+}
+
+#headspa .trial .feature p {
+    position: relative;
+    line-height: 1.4;
+    margin: 0 30px;
+    padding-left: 150px;
+}
+
+#headspa .trial .feature p::before {
+    content: "施術内容";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 28px;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #fff;
+}
+
+#headspa .trial .lineup {
+    display: flex;
+    justify-content: space-between;
+}
+
+#headspa .trial img {
+    margin-bottom: 10px;
+}
+
+#headspa .trial p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+
+/* menu */
+
+#menu {
+    padding: 50px 0;
+}
+
+#menu .inner h2 {
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+#menu .inner p {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+#menu .lineup {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu .lineup figure {
+    margin: 0;
+}
+
+
+/* footer */
+
+#footer {
+    padding: 60px 0 40px 0;
+    background: #d8effc;
+}
+
+#footer .contact {
+    margin-bottom: 40px;
+}
+
+#footer .contact p {
+    color: #023894;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 240px;
+    padding: 5px;
+    margin: 0 auto 35px auto;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#footer .contact h2 {
+    color: #023894;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+#footer .contact h1 {
+    color: #023894;
+    font-size: 54px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+#footer .access {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .access .logo {
+    width: 160px;
+    margin-top: 30px;
+}
+
+#footer .access .info {
+    position: relative;
+    width: 790px;
+    margin-top: 20px;
+}
+
+#footer .access .info h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    width: 640px;
+    border-bottom: 1px solid #000;
+}
+
+#footer .access .info h3 .code {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+#footer .access .info section {
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .access .info section .map {
+    text-align: right;
+    width: 220px;
+    margin-top: 10px;
+}
+
+#footer .access .info section .map img {
+    margin-bottom: 10px;
+}
+
+#footer .access .info section .map a {
+    color: #000;
+    font-size: 14px;
+}
+
+#footer .access .info section .address {
+    width: 390px;
+}
+
+#footer .access .info section .address p {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 1.8;
+}
+
+#footer .access .qr {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 90px;
+}
+
+#footer .access .qr figure {
+    margin: 0 0 10px 0;
+    width: 90px;
+}
+
+#footer .access .qr figure a {
+    color: #000;
+}
+
+#footer .access .qr figure img {
+    margin: 0 0 5px 0;
+}
+
+#footer .access .qr figure figcaption {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #container {
+        min-width: initial;
+    }
+
+    .inner {
+        width: auto;
+    }
+
+    .show-for-small {
+        display: inline;
+    }
+
+    .hide-for-small {
+        display: none;
+    }
+
+
+    /* headline */
+
+    #headline {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px 0;
+        height: 40px;
+    }
+
+    #headline img {
+        width: 260px;
+    }
+
+
+    /* reception */
+
+    #reception {
+        position: absolute;
+        top: 40px;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        z-index: 9999;
+    }
+
+    #reception .detail {
+        display: block;
+        width: 100%;
+    }
+
+    #reception .info {
+        width: 100%;
+    }
+
+    #reception .info h2 {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    #reception .info h2 .small {
+        font-size: 12px;
+    }
+
+    #reception .info h2 .medium {
+        font-size: 16px;
+    }
+
+    #reception .info p {
+        font-size: 10px;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+
+    #reception .off {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 90px;
+    }
+
+    #reception .off img {
+        width: 90px;
+    }
+
+
+    /* banner */
+
+    #banner {
+        height: 100%;
+    }
+
+    #banner .inner {
+        padding: 190px 20px 0 20px;
+        background-size: contain;
+        background-position: center bottom;
+    }
+
+    #logo {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 160px;
+        margin: 0 auto 30px auto;
+    }
+
+    #logo img {
+        width: 100%;
+    }
+
+    #open {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    #open img {
+        width: 100%;
+    }
+
+    #content {
+        padding-top: 40px;
+    }
+
+    #concept {
+        margin-bottom: 20px;
+        padding: 20px 20px 0 20px;
+    }
+
+    #concept h2 {
+        margin-bottom: 20px;
+    }
+
+    #concept h2 img {
+        width: 100%;
+    }
+
+    #concept h3 {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    #concept p {
+        font-size: 13px;
+        text-align: left;
+        letter-spacing: 0;
+        line-height: 1.6;
+    }
+
+
+    #headspa {
+        padding: 40px 20px;
+    }
+
+    #headspa img {
+        width: 100%;
+    }
+
+    #headspa .title h2 {
+        margin-bottom: 40px;
+    }
+
+    #headspa .title p {
+        font-size: 13px;
+        text-align: left;
+        letter-spacing: 0;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    #headspa .concept {
+        margin-bottom: 40px;
+    }
+
+    #headspa .concept .lineup {
+        display: block;
+    }
+
+    #headspa .concept .lineup figure {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #headspa .concept .lineup figure:last-child {
+        margin-bottom: 0;
+    }
+
+    #headspa .concept .lineup figure .concept-title {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #headspa .concept .lineup figure .concept-title img {
+        width: 180px;
+    }
+
+    #headspa .concept .lineup figure figcaption {
+        padding: 15px;
+        background: rgba(0,0,0,.1);
+    }
+
+    #headspa .concept .lineup figure:after {
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        font-size: 24px;
+        width: 24px;
+        margin: auto;
+    }
+
+    #headspa .service {
+        margin-bottom: 40px;
+    }
+
+    #headspa .service .lineup {
+        display: block;
+    }
+
+    #headspa .service .lineup figure {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+
+    #headspa .service .lineup figure .service-title {
+        text-align: center;
+    }
+
+    #headspa .service .lineup figure .service-title img {
+        width: 160px;
+    }
+
+    #headspa .trial {
+        
+    }
+
+    #headspa .trial .feature {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 40px auto;
+    }
+
+    #headspa .trial .feature img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #headspa .trial .feature p {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #headspa .trial .feature p::before {
+        position: relative;
+        top: auto;
+        left: auto;
+        font-size: 10px;
+        line-height: 18px;
+        height: 20px;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    #headspa .trial .lineup {
+        display: block;
+        text-align: center;
+    }
+
+    #headspa .trial .lineup img {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+
+    #headspa .trial .lineup img:last-child {
+        margin-bottom: 0;
+    }
+
+
+    /* menu */
+
+    #menu {
+        padding: 40px 0;
+        height: auto;
+    }
+
+    #menu .inner p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    #menu .inner h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    #menu .lineup {
+        display: block;
+        padding: 0 20px;
+    }
+
+    #menu .lineup figure {
+        margin: 0 0 20px 0;
+    }
+
+    #menu .lineup figure:last-child {
+        margin: 0;
+    }
+
+    #menu .lineup figure img {
+        width: 100%;
+    }
+
+
+    /* footer */
+
+    #footer {
+        padding: 20px;
+    }
+
+    #footer .contact {
+        margin-bottom: 30px;
+        border-bottom: 1px dashed #000;
+    }
+
+    #footer .contact p {
+        font-size: 14px;
+        letter-spacing: 0;
+        margin-bottom: 20px;
+        width: 180px;
+    }
+
+    #footer .contact h2 {
+        font-size: 16px;
+    }
+
+    #footer .contact h1 {
+        font-size: 28px;
+        letter-spacing: 0;
+        margin-bottom: 20px;
+    }
+
+    #footer .contact h1 a {
+        color: #023894;
+    }
+
+    #footer .access {
+        display: block;
+    }
+
+    #footer .access .logo {
+        width: 100px;
+        margin: 0 auto 20px auto;
+    }
+
+    #footer .access .logo img {
+        width: 100%;
+    }
+
+    #footer .access .info {
+        width: 100%;
+    }
+
+    #footer .access .info section {
+        display: block;
+        width: 100%;
+    }
+
+    #footer .access .info h3 {
+        font-size: 15px;
+        text-align: center;
+        line-height: 1.4;
+        letter-spacing: 0;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid #000;
+    }
+
+    #footer .access .info h3 .direction {
+        display: none;
+    }
+
+    #footer .access .info h3 .code {
+        font-size: 13px;
+    }
+
+    #footer .access .info section .address {
+        width: 100%;
+    }
+
+    #footer .access .info section .map {
+        text-align: center;
+        margin: 0 auto 20px auto;
+    }
+
+    #footer .access .info section .address p {
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 0;
+    }
+
+    #footer .access .qr {
+        position: relative;
+        top: auto;
+        right: auto;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        width: 100%;
+        border-bottom: 1px dashed #000;
+    }
+
+    
+
+}
