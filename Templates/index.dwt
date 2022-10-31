@@ -68,7 +68,7 @@
                     <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">SHOP<span>ショップ</span></a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
                             <li><a href="../shop/index.html">ラシンバン</a></li>
-                            <li><a href="../shop/avance.html">アバンセ</a></li>
+                             <li><a href="../shop/studio.html">フォトスタジオ</a></li><li><a href="../shop/avance.html">アバンセ</a></li>
                             <li><a href="../shop/bfree.html">ビーフリー</a></li>
                             <!--<li><a href="../shop/index.html">スロービューティ ラシンバン</a></li>-->
                             <li><a href="../shop/omfam.html">オムファム</a></li>
