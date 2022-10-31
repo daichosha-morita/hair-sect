@@ -76,8 +76,8 @@
                         </ul>
                     </li>
                     <li><a href="../menu/index.html">MENU<span>メニュー</span></a></li>
-                    <li><a href="/wp/category/campaign">CAMPAIGN<span>キャンペーン</span></a></li>
-                    <li><a href="/wp/style">STYLE<span>スタイル</span></a></li>
+                   <!-- <li><a href="/wp/category/campaign">CAMPAIGN<span>キャンペーン</span></a></li> -->
+                     <!-- <li><a href="/wp/style">STYLE<span>スタイル</span></a></li> -->
                     <li><a href="../product/index.html">PRODUCT<span>商品紹介</span></a></li>
                     <li><a href="https://hair-sect-recruit.com/" target="_blank">RECRUIT<span>リクルート</span></a></li>
                     <li><a href="/wp/">BLOG<span>ブログ</span></a></li>
