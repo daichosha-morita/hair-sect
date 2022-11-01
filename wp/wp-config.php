@@ -26,7 +26,7 @@ define( 'DB_NAME', 'hair-sect' );
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'suepass' );
+define( 'DB_PASSWORD', 'root' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
